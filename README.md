@@ -842,9 +842,11 @@ rprint(f"\nPlease find target inventory file here:  [green]'{date_dir}/inventory
 
 ```
 ![output1](nornir/screenshots/get_dev_info.png )
-
 ```
-(venv) swt@amd:~/Repo/Automation/python-scripts/nornir$ cat DevicesInfo/02-01-2023_09\:22\:13/inventory.csv 
+(venv) swt@amd:~/Repo/Automation/python-scripts/nornir$ cat DevicesInfo/02-01-2023_09\:22\:13/inventory.csv
+```
+
+```csv
 Host,Chassis,Chassis_SN,Platform,DeviceType,SystemImage,Version,Version_Short,Release,Uptime,DRAMsize,FlashSize
 AC3v,IOSv,9P3C33N8EIR,vios_l2,IOSv,flash0:/vios_l2-adventerprisek9-m,15.2(20200924:215240),15.2,[sweickge-sep24-2020-l2iol-release 135],9 minutes,935161,256
 D2v,IOSv,9OKKAX7TFD7,vios_l2,IOSv,flash0:/vios_l2-adventerprisek9-m,15.2(20200924:215240),15.2,[sweickge-sep24-2020-l2iol-release 135],9 minutes,935161,256
