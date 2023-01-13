@@ -914,7 +914,7 @@ print(f"[Completed] You can find backup files in {date_result}")
 ```
 (venv) swt@amd:~/Repo/Automation/python-scripts/nornir$ ./oper-backup.py                
 
-[Step 1] Maing sure directory structure exists
+[Step 1] Ensuring directory structure exists
 
 [Step 2] Running Norninr tasks
 
