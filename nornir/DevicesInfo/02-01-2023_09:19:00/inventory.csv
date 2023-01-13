@@ -1,0 +1,12 @@
+Host,Chassis,Chassis_SN,Platform,DeviceType,SystemImage,Version,Version_Short,Release,Uptime,DRAMsize,FlashSize
+D2v,IOSv,9OKKAX7TFD7,vios_l2,IOSv,flash0:/vios_l2-adventerprisek9-m,15.2(20200924:215240),15.2,[sweickge-sep24-2020-l2iol-release 135],6 minutes,935161,256
+D1v,IOSv,9ZPS4639WTO,vios_l2,IOSv,flash0:/vios_l2-adventerprisek9-m,15.2(20200924:215240),15.2,[sweickge-sep24-2020-l2iol-release 135],6 minutes,935161,256
+AC3v,IOSv,9P3C33N8EIR,vios_l2,IOSv,flash0:/vios_l2-adventerprisek9-m,15.2(20200924:215240),15.2,[sweickge-sep24-2020-l2iol-release 135],6 minutes,935161,256
+R3v,IOSv,9G6YS9IH9ZC1L8MGV0SHE,IOSv,IOSv,flash0:/vios-adventerprisek9-m,15.6(2)T,15.6,RELEASE SOFTWARE (fc2),6 minutes,984313,256
+R1v,IOSv,979NCMYPQ0IPHHTYX6A85,IOSv,IOSv,flash0:/vios-adventerprisek9-m,15.4(3)M8,15.4,RELEASE SOFTWARE (fc3),6 minutes,984313,256
+AC2v,IOSv,9S7H3LOD3RL,vios_l2,IOSv,flash0:/vios_l2-adventerprisek9-m,15.2(20200924:215240),15.2,[sweickge-sep24-2020-l2iol-release 135],6 minutes,935161,256
+R4v,IOSv,9G84LRPQ2PT72IKIVOIFJ,IOSv,IOSv,flash0:/vios-adventerprisek9-m,15.6(2)T,15.6,RELEASE SOFTWARE (fc2),6 minutes,984313,256
+R2v,IOSv,971PQJ7F8X8IFSBTY7XRS,IOSv,IOSv,flash0:/vios-adventerprisek9-m,15.9(3)M4,15.9,RELEASE SOFTWARE (fc3),6 minutes,984313,256
+AC1v,IOSv,9GXCFZJCRYN,vios_l2,IOSv,flash0:/vios_l2-adventerprisek9-m,15.2(20200924:215240),15.2,[sweickge-sep24-2020-l2iol-release 135],6 minutes,935161,256
+AC4v,IOSv,9619Z0NRJB9,vios_l2,IOSv,flash0:/vios_l2-adventerprisek9-m,15.2(20200924:215240),15.2,[sweickge-sep24-2020-l2iol-release 135],6 minutes,935161,256
+HQ,C1861-UC-2BRI-K9,FTX132383BT,C1861,C1861-UC-2BRI-K9,flash:c1861-adventerprisek9-mz.152-4.M11.bin,15.2(4)M11,15.2,RELEASE SOFTWARE (fc2),23 minutes,235520,128

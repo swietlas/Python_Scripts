@@ -1,0 +1,7 @@
+---
+
+cisco_group:
+    platform: "ios"
+    username: "ansi"
+    password: "C1sc0123!"
+

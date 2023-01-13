@@ -1,0 +1,19 @@
+---
+
+cisco_group:
+    platform: "ios"
+    #username: "ansi"
+    #password: "C1sc0123!"
+
+core:
+    platform: "ios"
+
+distribution:
+    platform: "ios"
+
+isp:
+    platform: "ios"
+access:
+    platform: "ios"
+
+

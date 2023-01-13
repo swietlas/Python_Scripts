@@ -1,0 +1,62 @@
+---
+
+R1v:
+    hostname: "10.10.7.215"
+    groups:
+        - cisco_group
+        - isp
+
+R2v:
+    hostname: "10.10.7.170"
+    groups:
+        - cisco_group
+        - isp
+
+R3v:
+    hostname: "10.10.7.125"
+    groups:
+        - cisco_group
+        - core
+R4v:
+    hostname: "10.10.7.230"
+    groups:
+        - cisco_group
+        - core
+
+D1v:
+    hostname: "10.10.7.155"
+    groups:
+        - cisco_group
+        - distribution 
+
+D2v:
+    hostname: "10.10.7.110"
+    groups:
+        - cisco_group
+        - distribution 
+AC1v:
+    hostname: "10.10.7.186"
+    groups:
+        - cisco_group
+        - access 
+   
+AC2v:
+    hostname: "10.10.7.140"
+    groups:
+        - cisco_group
+        - access   
+AC3v:
+    hostname: "10.10.7.245"
+    groups:
+        - cisco_group
+        - access 
+AC4v:
+    hostname: "10.10.7.200"
+    groups:
+        - cisco_group
+        - access  
+# HQ: # This is real equipment c1861 with voice IOS
+#     hostname: "10.10.7.154"
+#     groups:
+#         - cisco_group
+#         - distribution

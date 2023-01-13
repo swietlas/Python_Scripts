@@ -1,0 +1,33 @@
+D1v Gi0/0 UPLINK to R1v
+D1v Gi0/1 TRUNK to AC1v
+D1v Gi0/2 TRUNK to AC2v
+D1v Gi0/3 MGMT
+D1v Gi1/0 TRUNK to AC1v
+D1v Gi1/1 TRUNK to AC2v
+D1v Po1 
+D1v Po2 
+D2v Gi0/0 
+D2v Gi0/1 
+D2v Gi0/2 
+D2v Gi0/3 MGMT
+D2v Gi1/0 
+D2v Gi1/1 
+AC1v Gi0/0 
+AC1v Gi0/1 VPC1
+AC1v Gi0/2 VPC2
+AC1v Gi0/3 MGMT
+AC1v Gi1/0 
+AC1v Po1 
+AC2v Gi0/0 
+AC2v Gi0/1 
+AC2v Gi0/3 MGMT
+AC2v Gi1/1 
+AC2v Po2 
+AC3v Gi0/1 
+AC3v Gi0/2 
+AC3v Gi0/3 MGMT
+AC4v Gi0/0 
+AC4v Gi0/1 
+AC4v Gi0/2 
+AC4v Gi0/3 MGMT
+AC4v Gi1/0 

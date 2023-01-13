@@ -1,0 +1,21 @@
+---
+
+inventory:
+    plugin: SimpleInventory
+    options:
+        host_file: "hosts_vios.yaml"
+        group_file: "groups_vios.yaml"
+        defaults_file: "defaults_vios.yaml"
+        
+connection_options:   
+    scrapli:
+      platform: cisco_iosxe
+      extras:
+        auth_strict_key: False
+        transport: system
+        transport_options: {"open_cmd": ["-o", "KexAlgorithms=+diffie-hellman-group1-sha1"]}
+
+runner:
+    plugin: threaded
+    options:
+        num_workers: 10

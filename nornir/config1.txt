@@ -1,0 +1,4 @@
+ntp server 88.99.55.12
+snmp-server community SwtLab ro
+interface e0/3
+description THIS IS A MGMT INTERFACE

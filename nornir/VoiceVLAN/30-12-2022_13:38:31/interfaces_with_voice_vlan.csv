@@ -1,0 +1,3 @@
+Host,Interface,Vlan,VoiceVLAN
+AC3v,Gi0/1,30,50
+AC3v,Gi0/2,40,50

@@ -1,0 +1,17 @@
+D1v,Gi1/2,Disabled by Admin
+D1v,Gi1/3,Disabled by Admin
+D2v,Gi1/2,Disabled by Admin
+D2v,Gi1/3,Disabled by Admin
+AC1v,Gi1/1,Disabled by Admin
+AC1v,Gi1/2,Disabled by Admin
+AC1v,Gi1/3,Disabled by Admin
+AC2v,Gi0/2,Disabled by Admin
+AC2v,Gi1/0,Disabled by Admin
+AC2v,Gi1/2,Disabled by Admin
+AC2v,Gi1/3,Disabled by Admin
+AC3v,Gi1/0,Disabled by Admin
+AC3v,Gi1/2,Disabled by Admin
+AC3v,Gi1/3,Disabled by Admin
+AC4v,Gi1/1,Disabled by Admin
+AC4v,Gi1/2,Disabled by Admin
+AC4v,Gi1/3,Disabled by Admin
