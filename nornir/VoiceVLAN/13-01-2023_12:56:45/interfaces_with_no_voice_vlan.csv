@@ -1,0 +1,9 @@
+Host,Interface,Vlan
+AC1v,Gi0/1,10
+AC1v,Gi0/2,20
+AC1v,Gi1/1,20
+AC2v,Gi0/1,30
+AC4v,Gi0/1,1
+AC4v,Gi0/2,1
+AC3v,Gi0/1,30
+AC3v,Gi0/2,40

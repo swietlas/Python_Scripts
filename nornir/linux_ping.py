@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Crated by: swietlas
+This is script test target devices directly from management PC
+"""
 import os
 import subprocess
 #from subprocess import Popen, DEVNULL

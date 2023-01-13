@@ -113,4 +113,4 @@ results = switch_target.run(task=show_interfaces)
 status_list = ["connected","notconnect","err-disabled","disabled"]
 for s in status_list:
     SaveAndPrint(s)
-print("\nPlease find output files in {date_dir} directory")    
+print(f"\nPlease find output files in {date_dir} directory")    

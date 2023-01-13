@@ -28280,3 +28280,53 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
 
 
 2023-01-03 12:05:46,212 -  nornir.core -     INFO -        run() - Running task 'ping_basic' with args {} on 10 hosts
+2023-01-13 11:32:20,174 -  nornir.core -     INFO -        run() - Running task 'ping_basic' with args {} on 10 hosts
+2023-01-13 12:46:57,791 -  nornir.core -     INFO -        run() - Running task 'show_interfaces' with args {} on 6 hosts
+2023-01-13 12:51:40,679 -  nornir.core -     INFO -        run() - Running task 'show_interfaces' with args {} on 6 hosts
+2023-01-13 12:56:46,613 -  nornir.core -     INFO -        run() - Running task 'show_switchport' with args {} on 10 hosts
+2023-01-13 12:56:47,011 - nornir.core.task -    ERROR -      start() - Host 'R3v': task 'show_switchport' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./tshoot_voice_vlan_detection.py", line 71, in show_switchport
+    intf_status = task.run(task=send_command, command="show interfaces switchport")
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2023-01-13 12:56:47,037 - nornir.core.task -    ERROR -      start() - Host 'R1v': task 'show_switchport' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./tshoot_voice_vlan_detection.py", line 71, in show_switchport
+    intf_status = task.run(task=send_command, command="show interfaces switchport")
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2023-01-13 12:56:47,403 - nornir.core.task -    ERROR -      start() - Host 'R4v': task 'show_switchport' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./tshoot_voice_vlan_detection.py", line 71, in show_switchport
+    intf_status = task.run(task=send_command, command="show interfaces switchport")
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2023-01-13 12:56:47,589 - nornir.core.task -    ERROR -      start() - Host 'R2v': task 'show_switchport' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./tshoot_voice_vlan_detection.py", line 71, in show_switchport
+    intf_status = task.run(task=send_command, command="show interfaces switchport")
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2023-01-13 13:33:16,543 -  nornir.core -     INFO -        run() - Running task 'get_facts' with args {} on 10 hosts
+2023-01-13 13:43:49,081 -  nornir.core -     INFO -        run() - Running task 'get_facts' with args {} on 10 hosts

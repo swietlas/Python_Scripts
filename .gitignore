@@ -1,2 +1,5 @@
-venv/
+venv
 drafts/
+nornir/screenshots/
+netmiko/
+scrapli/
