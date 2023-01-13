@@ -34,7 +34,7 @@ def backup_configs(task,config_dir):
     startup_cfg = cfg_result.result["config"]["running"]
     task.run(task=write_file, content=startup_cfg, filename=f"{date_result}/{task.host}.cfg")
 
-print("\n[Step 1] Maing sure directory structure exists\n")
+print("\n[Step 1] Ensure directory structure exists\n")
 date_result = prepare_dirs()
 # calling napalm task
 print("[Step 2] Running Norninr tasks\n")
