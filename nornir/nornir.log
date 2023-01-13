@@ -28330,3 +28330,171 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
 
 2023-01-13 13:33:16,543 -  nornir.core -     INFO -        run() - Running task 'get_facts' with args {} on 10 hosts
 2023-01-13 13:43:49,081 -  nornir.core -     INFO -        run() - Running task 'get_facts' with args {} on 10 hosts
+2023-01-13 21:57:32,746 -  nornir.core -     INFO -        run() - Running task 'backup_configs' with args {} on 10 hosts
+2023-01-13 21:57:34,200 - nornir.core.task -    ERROR -      start() - Host 'R1v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 34, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 21:57:35,359 - nornir.core.task -    ERROR -      start() - Host 'R3v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 34, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 21:57:35,710 - nornir.core.task -    ERROR -      start() - Host 'R2v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 34, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 21:57:35,750 - nornir.core.task -    ERROR -      start() - Host 'AC2v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 34, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 21:57:35,780 - nornir.core.task -    ERROR -      start() - Host 'AC1v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 34, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 21:57:35,785 - nornir.core.task -    ERROR -      start() - Host 'AC3v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 34, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 21:57:35,866 - nornir.core.task -    ERROR -      start() - Host 'AC4v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 34, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 21:57:35,896 - nornir.core.task -    ERROR -      start() - Host 'R4v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 34, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 21:57:35,926 - nornir.core.task -    ERROR -      start() - Host 'D2v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 34, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 21:57:36,022 - nornir.core.task -    ERROR -      start() - Host 'D1v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 34, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 22:00:21,983 -  nornir.core -     INFO -        run() - Running task 'backup_configs' with args {} on 10 hosts
+2023-01-13 22:00:23,264 - nornir.core.task -    ERROR -      start() - Host 'R1v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 35, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 22:00:24,472 - nornir.core.task -    ERROR -      start() - Host 'R3v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 35, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 22:00:24,628 - nornir.core.task -    ERROR -      start() - Host 'R2v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 35, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 22:00:24,639 - nornir.core.task -    ERROR -      start() - Host 'AC4v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 35, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 22:00:24,668 - nornir.core.task -    ERROR -      start() - Host 'AC1v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 35, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 22:00:24,699 - nornir.core.task -    ERROR -      start() - Host 'D2v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 35, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 22:00:24,899 - nornir.core.task -    ERROR -      start() - Host 'AC3v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 35, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 22:00:24,955 - nornir.core.task -    ERROR -      start() - Host 'AC2v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 35, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 22:00:25,089 - nornir.core.task -    ERROR -      start() - Host 'R4v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 35, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 22:00:25,113 - nornir.core.task -    ERROR -      start() - Host 'D1v': task 'backup_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/swt/Repo/Automation/python-scripts/nornir/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./oper-backup.py", line 35, in backup_configs
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_dir}/{task.host}.txt")
+NameError: name 'date_dir' is not defined
+
+2023-01-13 22:09:19,814 -  nornir.core -     INFO -        run() - Running task 'backup_configs' with args {'config_dir': 'Backups/13-01-2023_22:09:19'} on 10 hosts
+2023-01-13 22:13:30,208 -  nornir.core -     INFO -        run() - Running task 'backup_configs' with args {'config_dir': 'Backups/13-01-2023_22:13:30'} on 10 hosts
+2023-01-13 22:14:46,054 -  nornir.core -     INFO -        run() - Running task 'backup_configs' with args {'config_dir': 'Backups/13-01-2023_22:14:46'} on 10 hosts
+2023-01-13 22:21:37,119 -  nornir.core -     INFO -        run() - Running task 'pull_facts' with args {} on 10 hosts
+2023-01-13 22:23:40,163 -  nornir.core -     INFO -        run() - Running task 'backup_configs' with args {'config_dir': 'Backups/13-01-2023_22:23:40'} on 10 hosts
+2023-01-13 22:24:13,670 -  nornir.core -     INFO -        run() - Running task 'backup_configs' with args {'config_dir': 'Backups/13-01-2023_22:24:13'} on 10 hosts

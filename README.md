@@ -861,3 +861,87 @@ AC2v,IOSv,9S7H3LOD3RL,vios_l2,IOSv,flash0:/vios_l2-adventerprisek9-m,15.2(202009
 HQ,C1861-UC-2BRI-K9,FTX132383BT,C1861,C1861-UC-2BRI-K9,flash:c1861-adventerprisek9-mz.152-4.M11.bin,15.2(4)M11,15.2,RELEASE SOFTWARE (fc2),25 minutes,235520,128
 
 ```
+
+#### Creating backups for all inventory devices - oper-backup.py 
+
+```python
+'''
+Created by swietlas
+
+This scripts creates backup of running config for IOS and IOSXE devices
+
+'''
+
+from nornir import InitNornir
+from nornir_napalm.plugins.tasks import napalm_get
+from nornir_utils.plugins.functions import print_result
+from nornir_utils.plugins.tasks.files import write_file
+import pathlib
+from datetime import datetime
+
+
+nr = InitNornir(config_file="config_vios.yaml")
+
+def prepare_dirs():
+    # Prepare Directory structure
+    output_dir = "Backups"
+    # datetime object containing current date and time
+    now = datetime.now()
+    # dd/mm/YY H:M:S
+    dt_string = now.strftime("%d-%m-%Y_%H:%M:%S")
+    date_dir = output_dir + "/" + dt_string
+    # Make sure all directories exist
+    pathlib.Path(output_dir).mkdir(exist_ok=True)
+    pathlib.Path(date_dir).mkdir(exist_ok=True)
+    return date_dir
+
+def backup_configs(task,config_dir):
+    cfg_result = task.run(task=napalm_get, getters=["config"])
+    startup_cfg = cfg_result.result["config"]["running"]
+    task.run(task=write_file, content=startup_cfg, filename=f"{date_result}/{task.host}.cfg")
+
+print("\n[Step 1] Maing sure directory structure exists\n")
+date_result = prepare_dirs()
+# calling napalm task
+print("[Step 2] Running Norninr tasks\n")
+results = nr.run(task=backup_configs, config_dir=date_result)
+# optionally you can print output to screen
+#print_result(results)
+print(f"[Completed] You can find backup files in {date_result}")
+```
+##### output
+
+```
+(venv) swt@amd:~/Repo/Automation/python-scripts/nornir$ ./oper-backup.py                
+
+[Step 1] Maing sure directory structure exists
+
+[Step 2] Running Norninr tasks
+
+[Completed] You can find backup files in Backups/13-01-2023_22:24:13
+(venv) swt@amd:~/Repo/Automation/python-scripts/nornir$ tree Backups/
+Backups/
+├── 13-01-2023_22:13:30
+│   ├── AC1v.cfg
+│   ├── AC2v.cfg
+│   ├── AC3v.cfg
+│   ├── AC4v.cfg
+│   ├── D1v.cfg
+│   ├── D2v.cfg
+│   ├── R1v.cfg
+│   ├── R2v.cfg
+│   ├── R3v.cfg
+│   └── R4v.cfg
+├── 13-01-2023_22:14:46
+│   ├── AC1v.cfg
+│   ├── AC2v.cfg
+│   ├── AC3v.cfg
+│   ├── AC4v.cfg
+│   ├── D1v.cfg
+│   ├── D2v.cfg
+│   ├── R1v.cfg
+│   ├── R2v.cfg
+│   ├── R3v.cfg
+│   └── R4v.cfg
+
+```
