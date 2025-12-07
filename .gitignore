@@ -2,3 +2,6 @@ venv
 drafts/
 netmiko/
 scrapli/
+__pycache__/
+*.pyc
+*.pyo

@@ -6,6 +6,7 @@ This scripts creates backup of running config for IOS and IOSXE devices
 
 '''
 
+import sys
 from nornir import InitNornir
 from nornir_napalm.plugins.tasks import napalm_get
 from nornir_utils.plugins.functions import print_result
@@ -33,6 +34,19 @@ def backup_configs(task,config_dir):
     cfg_result = task.run(task=napalm_get, getters=["config"])
     startup_cfg = cfg_result.result["config"]["running"]
     task.run(task=write_file, content=startup_cfg, filename=f"{date_result}/{task.host}.cfg")
+
+# Parse command-line arguments
+if len(sys.argv) > 1:
+    arg = sys.argv[1]
+    if arg == "--no-wr":
+        print("Script collect only backups")
+    elif arg == "--no-backup":
+        print("scripts only saves running config")
+    else:
+        print("Please use proper syntax")
+        sys.exit(1)
+else:
+    print("Standard wr and backup job")
 
 print("\n[Step 1] Ensure directory structure exists\n")
 date_result = prepare_dirs()
