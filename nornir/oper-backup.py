@@ -36,7 +36,10 @@ def backup_configs(task,config_dir):
     task.run(task=write_file, content=startup_cfg, filename=f"{date_result}/{task.host}.cfg")
 
 # Parse command-line arguments
-if len(sys.argv) > 1:
+if len(sys.argv) > 2:
+    print("Please use proper syntax")
+    sys.exit(1)
+elif len(sys.argv) == 2:
     arg = sys.argv[1]
     if arg == "--no-wr":
         print("Script collect only backups")
